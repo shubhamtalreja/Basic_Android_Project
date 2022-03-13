@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-//        val playerturn = findViewById<TextView>(R.id.playerturn)
 //        val button = findViewById<Button>(R.id.button)
 //        val button1 = findViewById<Button>(R.id.button1)
 //        val button2 = findViewById<Button>(R.id.button2)
@@ -171,7 +170,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     private fun updatedisplay( text : String) {
-playerturn.text= text
+        //        val playerturn = findViewById<TextView>(R.id.playerturn)
+
+        playerturn.text= text
         if (text.contains("Winner")){
             disablebutton()
         }
