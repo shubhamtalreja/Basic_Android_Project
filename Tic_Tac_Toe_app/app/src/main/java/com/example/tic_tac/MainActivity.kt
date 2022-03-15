@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main.*
+//import kotlinx.android.synthetic.main.activity_main.*
 
 
 
@@ -13,21 +13,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var  board : Array<Array<Button>>
     var Player = true
     var Turncount=0
+
     var boardstatus= Array(3){IntArray(3)}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-//        val button = findViewById<Button>(R.id.button)
-//        val button1 = findViewById<Button>(R.id.button1)
-//        val button2 = findViewById<Button>(R.id.button2)
-//        val button3 = findViewById<Button>(R.id.button3)
-//        val button4 = findViewById<Button>(R.id.button4)
-//        val button5 = findViewById<Button>(R.id.button5)
-//        val button6 = findViewById<Button>(R.id.button6)
-//        val button7 = findViewById<Button>(R.id.button7)
-//        val button8 = findViewById<Button>(R.id.button8)
-//        val reset = findViewById<Button>(R.id.button9)
+        val button = findViewById<Button>(R.id.button)
+        val button1 = findViewById<Button>(R.id.button1)
+        val button2 = findViewById<Button>(R.id.button2)
+        val button3 = findViewById<Button>(R.id.button3)
+        val button4 = findViewById<Button>(R.id.button4)
+        val button5 = findViewById<Button>(R.id.button5)
+        val button6 = findViewById<Button>(R.id.button6)
+        val button7 = findViewById<Button>(R.id.button7)
+        val button8 = findViewById<Button>(R.id.button8)
+        val reset= findViewById<Button>(R.id.button9)
 
 
         board = arrayOf(
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
         Initializevalue()
-        button9.setOnClickListener {
+        reset.setOnClickListener {
             Player= true
             Turncount=0
             Initializevalue()
@@ -170,7 +171,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     private fun updatedisplay( text : String) {
-        //        val playerturn = findViewById<TextView>(R.id.playerturn)
+                val playerturn = findViewById<TextView>(R.id.playerturn)
 
         playerturn.text= text
         if (text.contains("Winner")){
