@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/My_Projects/Projects/TODO_app/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/My_Projects/Projects/TODO_app/app/src/main/res/layout/item_todo.xml" value="0.24010416666666667" />
         <entry key="..\:/TODO_app/app/src/main/res/layout/activity_history.xml" value="0.25416666666666665" />
         <entry key="..\:/TODO_app/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/TODO_app/app/src/main/res/layout/activity_task.xml" value="0.25416666666666665" />
@@ -15,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="TODO_app.app" />
+      </set>
+    </option>
   </component>
 </project>
